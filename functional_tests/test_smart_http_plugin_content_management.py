@@ -138,10 +138,6 @@ def test_smart_http_plugin():
             except Exception as e:
                 print(f"⚠️ Citation test failed: {e}")
                 return True  # Don't fail the test for citation issues
-                    
-            except Exception as e:
-                print(f"⚠️ PDF detection test failed: {e}")
-                return False
         
         # Run async tests
         async def run_all_tests():
